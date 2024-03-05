@@ -1,0 +1,83 @@
+.taskCreator {
+    max-width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 0;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+}
+
+.taskCreator h2 {
+    margin-left: 2%;
+    font-size: 28px;
+}
+
+.taskCreator input,
+.taskCreator textarea,
+.taskCreator button {
+    color: #1E1E1E;
+}
+
+.taskCreator input {
+    width: 80%;
+}
+
+.taskCreator label {
+    font-size: 20px;
+}
+
+.taskInputs,
+.inputTaskDescription {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.taskInputs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 15px;
+}
+
+.inputTaskDescription {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.taskCreator button {
+    width: 150px;
+    height: 30px;
+    margin-left: 10%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.taskCreator button:hover {
+    cursor: pointer;
+    background-color: #484C4E;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .taskCreator h2 {
+        text-align: center;
+    }
+
+    .taskCreator button {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .taskCreator h2 {
+        font-size: 20px;
+    }
+}
